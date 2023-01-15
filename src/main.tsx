@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './App';
+import App from './core/index';
 
 import { 
     GlobalStyles 
@@ -25,7 +25,7 @@ debugData([
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <VisibilityProvider>
-            <App />
+            <App/>
 
             {GlobalStyles()}
         </VisibilityProvider>
