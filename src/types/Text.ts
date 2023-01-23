@@ -1,4 +1,3 @@
 export type TText = {
-    type: string;
-    text: string;
+    type: 'title' | 'subtitle' | 'input' | 'password' | 'register' | 'submit' | 'label';
 };

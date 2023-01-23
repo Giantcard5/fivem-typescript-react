@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import App from './core/index';
+// Change to HashRouter
+import { 
+    BrowserRouter  
+} from 'react-router-dom';
 
 import { 
     GlobalStyles 
@@ -15,6 +18,8 @@ import {
     debugData 
 } from './utils/debugData';
 
+import Routes from './routes/routes';
+
 debugData([
     {
         action: 'setVisible',
@@ -25,7 +30,9 @@ debugData([
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <VisibilityProvider>
-            <App/>
+            <BrowserRouter>
+                <Routes/>
+            </BrowserRouter>
 
             {GlobalStyles()}
         </VisibilityProvider>

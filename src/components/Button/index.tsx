@@ -5,19 +5,19 @@ import {
 } from './styles';
 
 import { 
-    TText
-} from '../../types/Text';
+    TButton
+} from '../../types/Button';
 
 import { 
-    TChildren
+    TChildren 
 } from '../../types/Children';
 
-const Text: React.FC<TText & TChildren> = (props) => {
+const Button: React.FC<TButton & TChildren> = (props) => {
     return (
         <Container type={props.type}>
             {props.children}
         </Container>
-    );
-};
+    )
+}
 
-export default Text;
+export default Button;

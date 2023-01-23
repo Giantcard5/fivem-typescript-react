@@ -1,3 +1,3 @@
 export type TBlock = {
-    type: string;
+    type: 'content' | 'header' | 'form' | 'label';
 }

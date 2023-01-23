@@ -1,18 +1,18 @@
 import React from 'react';
 
 import { 
-    Container
+    Container 
 } from './styles';
 
 import { 
-    TText
-} from '../../types/Text';
-
-import { 
-    TChildren
+    TChildren 
 } from '../../types/Children';
 
-const Text: React.FC<TText & TChildren> = (props) => {
+import { 
+    TForm
+} from '../../types/Form';
+
+const Form: React.FC<TChildren & TForm> = (props) => {
     return (
         <Container type={props.type}>
             {props.children}
@@ -20,4 +20,4 @@ const Text: React.FC<TText & TChildren> = (props) => {
     );
 };
 
-export default Text;
+export default Form;

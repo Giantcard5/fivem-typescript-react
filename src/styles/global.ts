@@ -18,9 +18,9 @@ export const GlobalStyles = globalCss({
     'body, input, textarea, select, button': {
         fontSize: '1vmax',
         fontWeight: '400',
-        fontFamily: 'Montserrat, sans-serif',
+        fontFamily: 'Inter, sans-serif',
 
-        color: '#EBEBEB'
+        color: 'var(--text-white)'
     },
 
     'button': {
@@ -46,5 +46,19 @@ export const GlobalStyles = globalCss({
         appearance: 'none',
         
         margin: '0',
+    },
+
+    ':root': {
+        '--icon-default': '#00EE97',
+        '--icon-default-shadow': '#00EE9750',
+
+        '--text-default': '#00EE97',
+        '--text-default-shadow': '#00EE9780',
+
+        '--text-white': '#EBEBEB',
+        '--text-white-shadow': '#EBEBEB',
+
+        
+        '--background': '#222222B3',
     },
 });
