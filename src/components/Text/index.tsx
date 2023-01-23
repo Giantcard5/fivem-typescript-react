@@ -8,14 +8,10 @@ import {
     TText
 } from '../../types/Text';
 
-import { 
-    TChildren
-} from '../../types/Children';
-
-const Text: React.FC<TText & TChildren> = (props) => {
+const Text: React.FC<TText> = (props) => {
     return (
         <Container type={props.type}>
-            {props.children}
+            {props.text}
         </Container>
     );
 };

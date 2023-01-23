@@ -7,6 +7,4 @@ export const Container = styled('main', {
 
     width: '100vw',
     height: '100vh',
-
-    background: 'url(https://media.discordapp.net/attachments/915438246832525362/1064710633754480751/Background.png)'
 });
